@@ -3,6 +3,7 @@
 #                                             #
 ###############################################
 
+# list of Menu items
 menu = {
     "Snacks": {
         "Cookie": .99,
@@ -53,6 +54,7 @@ menu = {
         "Fried banana": 4.49
     }
 }
+#Creating empty list for customer order
 customer_orders = []
 print("Welcome to the variety food truck.")
 place_order = True
@@ -128,13 +130,17 @@ while place_order:
             print(f"{menu_category} was not a menu option.")
     else:
         print("You didn't select a number.")
+#testing to see what customer_order is saving and printing
 #customer_orders=[{'Item Name': 'Burger - Beef', 'Price': 8.49, 'Quantity': '2'}, {'Item Name': 'Apple', 'Price': 0.49, 'Quantity': '3'}, {'Item Name': 'Rice pudding', 'Price': 4.99, 'Quantity': '4'}, {'Item Name': 'Granola bar', 'Price': 1.99, 'Quantity': 1}]
 #print(customer_orders)
 total_price = []
-print("Item name               Price     Quantity")
+print("Item name                     \t Price     Quantity")
 print("----------------------------|---------|----------")
 for order in customer_orders:
-    print(f'{order["Item Name"]}              {order["Price"]}      {order["Quantity"]}')
+    num_of_char = 28 - len(order["Item Name"])
+    num_of_char = " " * num_of_char
+
+    print(f'{order["Item Name"]}{num_of_char}| {order["Price"]}    |  {order["Quantity"]}')
     # print(order["Item Name"])
     # print(order["Price"])
     # print(order["Quantity"])
