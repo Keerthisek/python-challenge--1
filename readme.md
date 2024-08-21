@@ -2,7 +2,10 @@ Python assignment 1
 
 Overview:
 Designing an interactive ordering system from a food truck menu, using the skills you've learned in Python so far.
+
 Files - menu.py
+https://github.com/Keerthisek/python-challenge--1
+
 Repo name - python-challenge--1
 
 Variables used:
